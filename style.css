@@ -1,0 +1,528 @@
+/* COMMON STYLES */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: HK Grotesk;
+    src: url(fonts/HKGrotesk-Regular.otf) format("OpenType");
+}
+
+body{
+    font-family: HK Grotesk;
+    font-weight: 400;
+}
+
+button{
+    font-weight: 700;
+}
+
+.container{
+    max-width: 986px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+img{
+    max-width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+/* HEADER */
+.logo{
+    display: flex;
+    width: 10%;
+    margin-right: 80px;
+    position: relative;
+}
+
+.logo h1{
+    color: #fff;
+    font-weight: 700;
+}
+
+.nav-links{
+    display: flex;
+    width: 65%;
+    justify-content: flex-start;
+}
+
+.nav-links li{
+    margin-right: 30px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-btns{
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-btns button{
+    padding: 15px;
+    cursor: pointer;
+}
+
+.loginBtn{
+    background-color: #03062F;
+    color: #fff;
+    border: 1px solid #2B83EA;
+    border-radius: 2px;
+}
+
+.signupBtn{
+    background: #FFFFFF;
+    border: 1px solid #EDEDED;
+    border-radius: 2px;
+    color: #528FF0;
+    font-weight: bold;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+header{
+    height: 80px;
+    background-color: #03062F;
+}
+
+#logoimg1{
+    position: absolute;
+    width: 9px;
+    height: 10px;
+    top: 15px;
+    left: -20px;
+}
+
+#logoimg2{
+    position: absolute;
+    width: 10px;
+    height: 20px;
+    top: 5px;
+    left: -16px;
+}
+
+
+/* HERO SECTION */
+#hero{
+    background-color: #03062F;
+    position: relative;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    height: 500px;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 50%;
+    height: 70%;
+}
+
+.hero-text h2{
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 40px;
+    font-family: HK Grotesk;
+}
+
+.hero-text p{
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.hero-text button{
+    background: #2783F3;
+    border-radius: 2px;
+    padding: 12px 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.hero-image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 100px 110px 0 1330px;
+    border-color: #03062F transparent transparent transparent;
+    transform: translateY(100%);
+}
+
+
+/* PRODUCT SECTION */
+
+.product{
+    margin-top: 190px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 110px;
+}
+
+.product-images{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.product-info{
+    width: 40%;
+}
+
+.single_image{
+    width: 450px;
+    height: 450px;
+    margin: auto;
+    margin-bottom: 28px;
+    position: relative;
+}
+
+.gallery{
+    display: flex;
+    width: 532px;
+}
+
+.gallery div{
+    width: 56px;
+    height: 56px;
+    border: 1px solid rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.gallery div:last-child{
+    margin-right: 0;
+}
+
+.larrow, .rarrow{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #F4F6F6;
+    border: none;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.larrow{
+    position: absolute;
+    top: 50%;
+    left: -50px;
+}
+
+.rarrow{
+    position: absolute;
+    top: 50%;
+    right: -50px;
+}
+
+.title{
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.small-desc{
+    font-size: 20px;
+    line-height: 30px;
+    color: #4F5659;
+}
+
+.reviews{
+    display: flex;
+    margin-bottom: 45px;
+    margin-top: 32px;
+}
+
+.reviews svg{
+    cursor: pointer;
+}
+
+.reviews p{
+    color: #202324;
+    font-size: 16px;
+    margin-left: 6px;
+}
+
+.color{
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #939C9F;
+    margin-bottom: 12px;
+}
+
+.color-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.clr-option{
+    width: 124px;
+    height: 60px;
+    border: 1px solid #D8E0E2;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    overflow: hidden;
+}
+
+.clr-option .heading{
+    font-size: 10px;
+    font-weight: 600;
+    color: #fff;
+    width: 100%;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color1 .heading{
+    background: #DE742D;
+}
+.color2 .heading{
+    background: #A07EDC;;
+}
+
+.clrName{
+    font-size: 13px;
+    color: #202324;
+    font-weight: 600;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 12px;
+    text-align: center;
+}
+
+.headandclr{
+    height: 44px;
+}
+
+.quantity{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    color: #939C9F;
+    margin-bottom: 10px;
+}
+
+.quantityBtn{
+    margin-bottom: 32px;
+}
+
+.decreaseBtn, .increaseBtn, .currentQty{
+    width: 40px;
+    height: 48px;
+    border: none;
+    cursor: pointer;
+    background: #EDF1F2;
+    border-radius: 4px;
+    color: #8CA4AB;
+}
+
+.currentQty{
+    pointer-events: none;
+    background-color: #fff;
+    color: #34393A;
+}
+
+input[type='radio']:checked:after {
+    width: 3px;
+    height: 3px;
+    border-radius: 3px;
+    position: relative;
+    top: -2px;
+    left: 3px;
+    background-color: #00BA74;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid #00BA74;
+}
+
+.radio-label{
+    color: #202324;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.radio-text{
+    color: #202324;
+    font-size: 13px;
+    display: block;
+    margin-bottom: 21px;
+}
+
+.radio-text strong{
+    font-weight: 700;
+}
+
+.trevapay{
+    background: #B1FBE3;
+    border-radius: 8px;
+    width: 65px;
+    height: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-weight: 700;
+}
+
+.save{
+    color: #00BA74;
+}
+
+.addtobag{
+    font-size: 18px;
+    width: 100%;
+    padding: 24px 0;
+    background: #00BA74;
+    border-radius: 4px;
+    border: none;
+    margin-bottom: 24px;
+    cursor: pointer;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addtobag svg{
+    margin-right: 15px;
+}
+
+.long-desc li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.long-desc li svg{
+    margin-right: 10px;
+}
+
+.small-text{
+    display: flex;
+    align-items: center;
+    color: #545C5F;
+    font-size: 14px;
+    margin-top: 24px;
+}
+
+.small-text svg{
+    margin-right: 10px;
+}
+
+.small-text span{
+    display: block;
+    border-bottom: 1px solid #545C5F;
+}
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1136px){
+    header{
+        height: 150px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .logo{
+        margin: 0;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+    .nav-links {
+        width: 100%;
+        justify-content: space-around;
+        margin-bottom: 10px;
+    }
+    .nav-links li {
+        margin-right: 0px;
+    }
+    .nav-btns {
+        width: 50%;
+        justify-content: space-around;
+        margin-top: 10px;
+    }
+    .nav-btns button {
+        padding: 5px;
+    }
+    .hero{
+        padding: 20px;
+    }
+    .hero-image{
+        display: none;
+    }
+    .hero-text {
+        width: 100%;
+    }
+    .product{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .product-images{
+        width: 100%;
+    }
+    
+    .product-info{
+        width: 100%;
+    }
+    .gallery {
+        width: 100%;
+        flex-wrap: wrap;
+        margin-bottom: 32px;
+    }
+    .single_image {
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 560px){
+    .nav-btns {
+        width: 100%;
+    }
+    .larrow{
+        left: -10px;
+    }
+    
+    .rarrow{
+        right: -10px;
+    }
+}
